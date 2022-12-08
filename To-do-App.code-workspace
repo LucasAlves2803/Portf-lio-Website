@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../To do App/To-do-App"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Portf-lio-Website"
+	}
+}
