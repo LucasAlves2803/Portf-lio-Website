@@ -12,11 +12,11 @@
     <nav class="navbar">
         <ul class="list_nav">
             <!-- Lista não ordenada -- unordered list -->
-            <li> <a href=""> Home</a>  </li>
-            <li> <a href=""> Sobre mim</a> </li>
-            <li> <a href=""> Projetos</a> </li>
-            <li> <a href=""> Serviços</a> </li>
-            <li> <a href=""> Contanto</a> </li>
+            <li> <a href="#home"> Home</a>  </li>
+            <li> <a href="#sobre_mim"> Sobre mim</a> </li>
+            <li> <a href="#projects"> Projetos</a> </li>
+            <li> <a href="#services"> Serviços</a> </li>
+            <li> <a href="#secao"> Contato</a> </li>
             <!-- <li> <a href=""> Serviços</a> </li> -->
         </ul>
     </nav>
@@ -24,7 +24,7 @@
     <section id="home">
         <div class="main">
             <h1 class="main__cabecalho">Olá, meu nome é <br> <b>Lucas</b> </h1>
-            <button class="main__btn"> Contrate-me</button>
+            <a href="#secao" > <button class="main__btn" >  Contrate-me  </button> </a> 
         </div>
         <!-- <img src="" class="imagem" alt="Lucas Alves"> -->
     </section>
@@ -84,16 +84,32 @@
         <h1 class="cabecalho">Serviços</h1>
         <div class="row">
             <div class="box">
-                <img src="img/webdesign.png" alt="">  
-                <h1 class="cabecalho">
-                    Website Design
-                </h1>
-                <p>Criação dos sites mais legais do mundo.
-                   Com os melhores designs e funcionalidades!
-                </p>
+                <div class="parte1">
+                    <h1>
+                        Website Design
+                    </h1>
+                    <p>Criação dos sites mais legais do mundo.
+                       Com os melhores designs e funcionalidades!
+                    </p>
+                </div>
+
+                <div class="parte2">
+                    <ol>
+                        <li>sadf</li>
+                        <li>fasd</li>
+                        <li>asf</li>
+                        <li>ffffd</li>
+                        <li>ded</li>
+                        naruto
+                        pokemon
+                        jojo
+                        kaiji
+                    </ol>
+                </div>
+                
+                
             </div>
             <div class="box">  
-                <img src="img/logic.png" alt="">  
                 <h1 class="cabecalho">
                     Lógica de Programação
                 </h1>
@@ -119,7 +135,10 @@
         <div class="contatos">
             <div> 
                 <i class="fa-brands fa-youtube"></i>
-                <p> Assista o meu youtube </p> 
+                <a href=""> 
+                    <p> Assista o meu youtube </p>  
+                </a>
+                
             </div>
             
             <div>

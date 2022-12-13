@@ -179,25 +179,31 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 10%;
 }
 #services .row .box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5%;
+  gap: 40px;
   padding: 30px;
   border: 1px solid black;
   text-align: justify;
-  border-radius: 15px;
+  width: 500px;
   background: linear-gradient(to top, rgb(255, 45, 45) 50%, white 50%);
   background-size: 100% 200%;
   transition: all 0.8s;
 }
-#services .row .box img {
-  height: 80px;
-  width: 80px;
-  background-color: white;
-  padding: 10px;
+#services .row .box .parte1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 20px;
+  max-width: 450px;
+}
+#services .row .box .parte1 h1 {
+  width: 100%;
+  font-size: 1.5rem;
 }
 #services .row .box:hover {
   background-position: left bottom;
@@ -212,7 +218,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
 }
 #secao .cabecalho {
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
@@ -233,11 +238,15 @@
   justify-content: space-between;
   align-items: center;
 }
+#secao .contatos div a {
+  text-decoration: none;
+}
 #secao .contatos div p {
   margin: 20px;
   line-height: 120%;
   font-size: 25px;
   font-weight: 600;
+  color: white;
   max-width: 150px;
 }
 #secao .contatos div .fa-brands {
