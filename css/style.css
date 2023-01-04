@@ -132,6 +132,7 @@
   align-items: center;
   background-color: grey;
   padding: 20px;
+  overflow: hidden;
 }
 #projects .cabecalho {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -140,7 +141,7 @@
   color: white;
   margin: 40px 0px;
 }
-#projects .box {
+#projects .cs-hidden .box {
   position: relative;
   width: 30vw;
   height: 50vh;
@@ -148,20 +149,20 @@
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-#projects .box .slide-img {
+#projects .cs-hidden .box .slide-img {
   height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#projects .box .slide-img img {
+#projects .cs-hidden .box .slide-img img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   box-sizing: border-box;
 }
-#projects .box .slide-img .overlay {
+#projects .cs-hidden .box .slide-img .overlay {
   position: absolute;
   left: 50%;
   top: 45%;
@@ -173,7 +174,7 @@
   height: 90%;
   background-color: rgba(92, 95, 230, 0.6);
 }
-#projects .box .slide-img .overlay .acesse {
+#projects .cs-hidden .box .slide-img .overlay .acesse {
   text-decoration: none;
   width: 160px;
   height: 40px;
@@ -188,15 +189,15 @@
   border-radius: 20px;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
 }
-#projects .box .slide-img .overlay .acesse:hover {
+#projects .cs-hidden .box .slide-img .overlay .acesse:hover {
   color: #FFFFFF;
   background-color: #f15fa3;
   transition: all ease 0.5s;
 }
-#projects .box .slide-img .overlay {
+#projects .cs-hidden .box .slide-img .overlay {
   visibility: hidden;
 }
-#projects .box .slide-img:hover .overlay {
+#projects .cs-hidden .box .slide-img:hover .overlay {
   visibility: visible;
   -webkit-animation: fade 0.5s;
           animation: fade 0.5s;
@@ -217,7 +218,7 @@
     opacity: 1;
   }
 }
-#projects .box .detail-box {
+#projects .cs-hidden .box .detail-box {
   width: 100%;
   height: 10%;
   background-color: white;
@@ -228,7 +229,7 @@
   border-radius: 5px;
   box-sizing: border-box;
 }
-#projects .box .detail-box a {
+#projects .cs-hidden .box .detail-box a {
   text-decoration: none;
 }
 

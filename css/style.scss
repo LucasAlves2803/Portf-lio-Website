@@ -139,6 +139,7 @@
     align-items: center;
     background-color: grey;
     padding: 20px;
+    overflow: hidden;
     // width: 100vw;
     
     .cabecalho{
@@ -148,96 +149,103 @@
         color: white;
         margin: 40px 0px;
     }
-    .box{
-        // border:1px solid black;
-        position: relative;
-        width: 30vw;
-        height: 50vh;
-        border-radius: 10px;
-        box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-        overflow: hidden;
-        .slide-img{
-            height: 90%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // position: relative;
-            img{
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                box-sizing: border-box;
-            }
-            .overlay{
-                position: absolute;
-                left:50%;
-                top:45%;
-                transform: translate(-50%,-50%);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 90%;
-                background-color: rgba(92,95,230,0.6);
-                .acesse{
-                    text-decoration: none;
-                    width: 160px;
-                    height: 40px;
-                    background-color: #FFFFFF;
-                    color: #252525;
+    .cs-hidden{
+        
+            .box{
+                // border:1px solid black;
+                position: relative;
+                width: 30vw;
+                height: 50vh;
+                border-radius: 10px;
+                box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+                overflow: hidden;
+                // border: 1px solid black;
+                .slide-img{
+                    height: 90%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-weight: 700;
-                    letter-spacing: 1px;
+                    // position: relative;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        box-sizing: border-box;
+                    }
+                    .overlay{
+                        position: absolute;
+                        left:50%;
+                        top:45%;
+                        transform: translate(-50%,-50%);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 90%;
+                        background-color: rgba(92,95,230,0.6);
+                        .acesse{
+                            text-decoration: none;
+                            width: 160px;
+                            height: 40px;
+                            background-color: #FFFFFF;
+                            color: #252525;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                            font-family: calibri;
+                            border-radius: 20px;
+                            box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+                        }
+                        .acesse:hover{
+                            color:#FFFFFF;
+                            background-color: #f15fa3;
+                            transition: all ease 0.5s;
+                        }
+                    }
+                    .overlay{
+                        visibility: hidden;
+                    }
+                    
+                    // height: 10%;
+                }
+                .slide-img:hover{ 
+                    .overlay{
+                        visibility: visible;
+                        animation: fade 0.5s;
+                        // Quando o mouse passar pela carrossel
+                        // a propriedade overlay fica visível
+                    }
+                }
+                @keyframes fade{
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+                .detail-box{
+                    width: 100%;
+                    height: 10%;
+                    background-color: white;
+                    display: flex;
+                    // border: 1px solid black;
+                    justify-content: center;
                     font-family: calibri;
-                    border-radius: 20px;
-                    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+                    align-items: center;
+                    border-radius: 5px;
+                    a{
+                        text-decoration: none;
+                    }
+                    box-sizing: border-box;
                 }
-                .acesse:hover{
-                    color:#FFFFFF;
-                    background-color: #f15fa3;
-                    transition: all ease 0.5s;
-                }
-            }
-            .overlay{
-                visibility: hidden;
-            }
-            
-            // height: 10%;
-        }
-        .slide-img:hover{ 
-            .overlay{
-                visibility: visible;
-                animation: fade 0.5s;
-                // Quando o mouse passar pela carrossel
-                // a propriedade overlay fica visível
-            }
-        }
-        @keyframes fade{
-            0%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-        .detail-box{
-            width: 100%;
-            height: 10%;
-            background-color: white;
-            display: flex;
-            // border: 1px solid black;
-            justify-content: center;
-            font-family: calibri;
-            align-items: center;
-            border-radius: 5px;
-            a{
-                text-decoration: none;
-            }
-            box-sizing: border-box;
+               
         }
     }
+    
+    
      
 }
 
